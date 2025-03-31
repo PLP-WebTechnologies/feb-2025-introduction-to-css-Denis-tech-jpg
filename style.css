@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Page</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            background-color: lightblue;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .intro-text {
+            font-size: 18px;
+            color: darkgray;
+            line-height: 1.5;
+        }
+        #main-title {
+            font-family: Arial, sans-serif;
+            color: darkblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-title">Welcome to My Website</h1>
+    <p class="intro-text">This is a simple HTML document.</p>
+    
+    <h2>About</h2>
+    <p>HTML stands for HyperText Markup Language. It is used to create web pages.</p>
+
+    <h2>Topics Covered</h2>
+    <ol type="I">  <!-- Ordered list with Roman numerals -->
+        <li>Introduction to HTML</li>
+        <li>Basic HTML Structure</li>
+        <li>Common HTML Tags</li>
+        <li>Lists in HTML</li>
+        <li>Links and Navigation</li>
+        <h2>Contact List</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>123 Main St, Nairobi</td>
+            <td>+254 712 345678</td>
+            <td>john.doe@email.com</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>456 Oak Ave, Mombasa</td>
+            <td>+254 711 223344</td>
+            <td>jane.smith@email.com</td>
+        </tr>
+        <tr>
+            <td>David Kim</td>
+            <td>789 Pine Rd, Kisumu</td>
+            <td>+254 733 112233</td>
+            <td>david.kim@email.com</td>
+        </tr>
+        <tr>
+            <td>Mary Johnson</td>
+            <td>321 Elm St, Nakuru</td>
+            <td>+254 720 556677</td>
+            <td>mary.johnson@email.com</td>
+        </tr>
+        <tr>
+            <td>Peter Ouma</td>
+            <td>555 Market St, Eldoret</td>
+            <td>+254 701 998877</td>
+            <td>peter.ouma@email.com</td>
+        </tr>
+    </table>
+
+    <h2>Contact</h2>
+    <p>Email: example@email.com</p>
+    <h3>HTML Images</h1>
+                <img src="nature.jpg" alt="The amazing nature" width="200" height="200">
+    </ol>
+
+    <h2>Contact</h2>
+    <p>Email: example@email.com</p>
+
+    <a href="https://www.example.com">Visit Example Website</a>
+    <title>Registration Form</title>
+
+    <h2 style="text-align: center;">User Registration Form</h2>
+
+    <form>
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <!-- Email Field -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" minlength="6" required>
+
+        <!-- Date of Birth Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Dropdown (Country Selection) -->
+        <label for="country">Select Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Choose your country</option>
+            <option value="kenya">Kenya</option>
+            <option value="uganda">Uganda</option>
+            <option value="tanzania">Tanzania</option>
+            <option value="rwanda">Rwanda</option>
+        </select>
+
+        <!-- Radio Buttons (Gender Selection) -->
+        <label>Gender:</label>
+        <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+        </div>
+
+        <!-- Checkboxes (Preferences) -->
+        <label>Preferences:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="newsletter" name="preferences" value="newsletter">
+            <label for="newsletter">Subscribe to Newsletter</label>
+
+            <input type="checkbox" id="updates" name="preferences" value="updates">
+            <label for="updates">Receive Updates</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
+
